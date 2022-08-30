@@ -1,0 +1,26 @@
+body {
+  padding-top: 125px;
+  padding-bottom:125px;
+  margin: 0;
+
+}
+.fixed-footer, .fixed-header{
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  background-color: darkmagenta;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.fixed-header{
+  top: 0;
+}
+
+.fixed-footer{
+  bottom: 0;
+}
+
+.content {
+  padding: 25px;
+}
