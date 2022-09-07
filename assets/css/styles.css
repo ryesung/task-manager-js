@@ -2,10 +2,10 @@ body {
   padding-top: 125px;
   padding-bottom:125px;
   margin: 0;
-
+  background-color: darkkhaki;
 }
 .fixed-footer, .fixed-header{
-  height: 75px;
+  height: 50px;
   width: 100%;
   position: fixed;
   background-color: darkmagenta;
@@ -15,12 +15,49 @@ body {
 
 .fixed-header{
   top: 0;
+  text-align: right;
 }
 
 .fixed-footer{
   bottom: 0;
 }
 
-.content {
-  padding: 25px;
+.main-content {
+  text-align: center;
+  
+}
+
+#header-text {
+  display: inline-block;
+  color: goldenrod;
+  padding-right: 10px;
+}
+
+
+.item{
+  padding: 5px 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.main-header {
+  align-self: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: cornsilk
+  ;
+}
+
+form > *{
+  margin: 15px 30px;
+}
+
+label{
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bold;
+}
+
+form{
+  background-color: darkgoldenrod;
 }
