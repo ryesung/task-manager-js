@@ -4,38 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C +OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho   +j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" defer></script>
   <script src="./script.js" defer></script>
   <title>Document</title>
 </head>
 <body>
-  <div  class="fixed-header"></div>
 
-  <div class="container content">
-
-  
-  <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  <div class="container main-content">
+   
+    <form id="form_newTask">
+    <h1 class="main-header item">New Task</h1>
+    <div class="alert alert-primary" role="alert">
+      A simple primary alert—check it out!
     </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    
+ <div class="w-75">
+    <div class="form-group row  mx-auto">
+      <label class="col-6 item" for="taskName">Task Name:</label>
+      <input type="text" class="form-control col-6 item" id="TaskName"  placeholder="Enter task">
     </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <div class="form-group row  mx-auto">
+      <label class= "col-6 item" for="taskDescription">Description:</label>
+      <textarea type="text" cols="50" rows="3" class="form-control item col-6" id="taskDescription" placeholder="Enter description"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="form-group row  mx-auto">
+      <label class= "col-6 item" for="assignTo">Assigned to:</label>
+      <input type="text"  class="form-control col-6 item" id="assignTo" placeholder="Enter description">
+    </div>
+   <div class="row">
+      <div class="form-group col-4">
+        <label class= "item" for="dueDate">Done By:</label>
+        <input type="date"  class="form-controlitem" id="dueDate" placeholder="MM/DD/YYYY">
+      </div>
+      <div class="col-8">
+        <div class="form-check row">
+      <input type="checkbox" class="form-check-input col-6 item" id="checkCompleted">
+      <label class="form-check-label item" for="checkCompleted">Completed</label>
+      <input type="checkbox" class="form-check-input col-6 item" id="checkNotCompleted">
+      <label class="form-check-label item" for="checkNotCompleted">Not Completed</label>
+    </div>
+    </div>
+      </div>
+    <button type="submit" class="btn btn-dark item">Submit</button>
   </form>
-
+  </div>
+</div>
 </div>
 
+<div  class="fixed-header">
+  <h2 id="header-text">Task Manager</h2>
+</div>
 
 <div class="fixed-footer"></div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
