@@ -16,15 +16,19 @@ body {
 .fixed-header{
   top: 0;
   text-align: right;
+  padding-bottom: 10px;
 }
 
 .fixed-footer{
   bottom: 0;
+  padding-top: 10px;
 }
 
 .main-content {
   text-align: center;
-  
+  min-width: 400px;
+  padding: 10px;
+  margin: 5px;
 }
 
 #header-text {
@@ -59,5 +63,9 @@ label{
 }
 
 form{
-  background-color: darkgoldenrod;
+  background-color: lightcyan;
+}
+
+.alert {
+  display: none;
 }
